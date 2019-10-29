@@ -5311,7 +5311,7 @@ GameObject:
   - component: {fileID: 33461015188531578}
   - component: {fileID: 23277747034759184}
   - component: {fileID: 114468730824465744}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6087,7 +6087,7 @@ GameObject:
   - component: {fileID: 33197054237781348}
   - component: {fileID: 23627148524649940}
   - component: {fileID: 114112477139149048}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6514,6 +6514,8 @@ GameObject:
   - component: {fileID: 4261610416356906}
   - component: {fileID: 54494775157381162}
   - component: {fileID: 114183879697948640}
+  - component: {fileID: 537707806}
+  - component: {fileID: 537707805}
   m_Layer: 0
   m_Name: blade
   m_TagString: Untagged
@@ -6565,6 +6567,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ground: {fileID: 0}
+--- !u!65 &537707806
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118236788984342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0018222327, y: 0.12144673, z: 0.01350307}
+  m_Center: {x: -0.0033216178, y: 0.049101822, z: -0.0017155713}
+--- !u!114 &537707805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118236788984342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d216e30864af9242ac389c9f6af1516, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPushable: 1
+  useTouchColor: 1
+  touchedColor: {r: 0, g: 0.46369174, b: 0.5294118, a: 0}
+  colorChangeObject: {fileID: 0}
+  touchAudio: {fileID: 0}
+  useHapticTouch: 0
+  hapticDuration: 1000
+  jointType: 0
+  reparent: 0
+  reparentToWorldWhenDropped: 0
+  kinematicWhenGrabbed: 0
+  grabButton: 0
+  isGrabnetized: 0
+  grabnetStrength: 1
+  grabBreakforce: Infinity
+  grabHidesController: 0
+  isThrowable: 1
+  attach: {fileID: 0}
+  handModelParentRight: {fileID: 0}
+  handModelParentLeft: {fileID: 0}
+  grabAudio: {fileID: 0}
+  releasedAudio: {fileID: 0}
+  throwAudio: {fileID: 0}
 --- !u!1 &1119558308398892
 GameObject:
   m_ObjectHideFlags: 0
@@ -12854,99 +12904,99 @@ MonoBehaviour:
   mandibular_translation_max: -8
   mandibular_translation_min: 8
   teeth:
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1354761128336880}
+    gum: {fileID: 1616661779680156}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1743894417747842}
+    gum: {fileID: 1818139917451590}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1509668391973856}
+    gum: {fileID: 1258686907101772}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1313760010976686}
+    gum: {fileID: 1578814251879548}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1498351839550778}
+    gum: {fileID: 1937266363379768}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1844514312533936}
+    gum: {fileID: 1193928883902704}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1581680666993520}
+    gum: {fileID: 1325644200867968}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1583054964504930}
+    gum: {fileID: 1126857755484058}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1322933750914260}
+    gum: {fileID: 1072290824891294}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1858257346215532}
+    gum: {fileID: 1101355244159036}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1617607042590860}
+    gum: {fileID: 1065691571928192}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1225937501281652}
+    gum: {fileID: 1273387466349080}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1972721709638870}
+    gum: {fileID: 1866725391070244}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
     rotation: {x: 0, y: 0, z: 0, w: 0}
     rotation_limit: {x: 0, y: 0, z: 0}
-  - this_tooth: {fileID: 0}
-    gum: {fileID: 0}
+  - this_tooth: {fileID: 1381749941498638}
+    gum: {fileID: 1961559054268820}
     init_location: {x: 0, y: 0, z: 0}
     location: {x: 0, y: 0, z: 0}
     location_limit: {x: 1, y: 1, z: 1}
@@ -14402,7 +14452,7 @@ GameObject:
   - component: {fileID: 33930092219865352}
   - component: {fileID: 23918133134071324}
   - component: {fileID: 114427807687405488}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16418,7 +16468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MRI: {fileID: 1251214991817170}
   tooth_number: 21
-  missing_tooth: 0
+  missing_tooth: 1
   max_missing_tooth_size: {x: 10, y: 10, z: 12}
   min_missing_tooth_size: {x: 3, y: 3, z: 3}
   tooth_info: {x: 8.043939, y: 5.6390476, z: 5.509224}
@@ -18183,7 +18233,7 @@ GameObject:
   - component: {fileID: 33517077339021184}
   - component: {fileID: 23902734779910414}
   - component: {fileID: 114937312620955802}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19049,7 +19099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MRI: {fileID: 1251214991817170}
   tooth_number: 18
-  missing_tooth: 0
+  missing_tooth: 1
   max_missing_tooth_size: {x: 10, y: 10, z: 12}
   min_missing_tooth_size: {x: 3, y: 3, z: 3}
   tooth_info: {x: 0, y: 0, z: 0}
@@ -22483,7 +22533,7 @@ BoxCollider:
   m_GameObject: {fileID: 1426094406219928}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.00031623963, y: 0.0072152377, z: 0.0014146302}
   m_Center: {x: -0.0003298039, y: 0.0023821082, z: -0.00015283185}
@@ -22496,7 +22546,7 @@ BoxCollider:
   m_GameObject: {fileID: 1426094406219928}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.00031624202, y: 0.004890285, z: 0.0010032651}
   m_Center: {x: -0.00032980036, y: 0.008566626, z: -0.00020197096}
@@ -22509,7 +22559,7 @@ BoxCollider:
   m_GameObject: {fileID: 1426094406219928}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.00006210983, y: 0.0010786175, z: 0.00036015353}
   m_Center: {x: -0.0003672688, y: 0.01333818, z: -0.00039506482}
@@ -23594,7 +23644,7 @@ GameObject:
   - component: {fileID: 33546698873338222}
   - component: {fileID: 23661649748672400}
   - component: {fileID: 114599505275217392}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25607,7 +25657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MRI: {fileID: 1251214991817170}
   tooth_number: 22
-  missing_tooth: 0
+  missing_tooth: 1
   max_missing_tooth_size: {x: 10, y: 10, z: 12}
   min_missing_tooth_size: {x: 3, y: 3, z: 3}
   tooth_info: {x: 6.892846, y: 4.3444386, z: 3.6309006}
@@ -26147,7 +26197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MRI: {fileID: 1251214991817170}
   tooth_number: 20
-  missing_tooth: 0
+  missing_tooth: 1
   max_missing_tooth_size: {x: 10, y: 10, z: 12}
   min_missing_tooth_size: {x: 3, y: 3, z: 3}
   tooth_info: {x: 6.977844, y: 4.715851, z: 8.761642}
@@ -28241,7 +28291,7 @@ GameObject:
   - component: {fileID: 33568498536594338}
   - component: {fileID: 23256372036155594}
   - component: {fileID: 114030834797650028}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30924,7 +30974,7 @@ GameObject:
   - component: {fileID: 33730719170754120}
   - component: {fileID: 23180470801439084}
   - component: {fileID: 114669516523224700}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31059,7 +31109,7 @@ GameObject:
   - component: {fileID: 33018296727440122}
   - component: {fileID: 23200526272983862}
   - component: {fileID: 114927595329611280}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39548,7 +39598,7 @@ GameObject:
   - component: {fileID: 33022527390953934}
   - component: {fileID: 23172689289835616}
   - component: {fileID: 114898341059390684}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39845,7 +39895,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4024009040925160
 Transform:
   m_ObjectHideFlags: 0
@@ -40668,7 +40718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MRI: {fileID: 1251214991817170}
   tooth_number: 23
-  missing_tooth: 0
+  missing_tooth: 1
   max_missing_tooth_size: {x: 10, y: 10, z: 12}
   min_missing_tooth_size: {x: 3, y: 3, z: 3}
   tooth_info: {x: 9.489555, y: 6.0901756, z: 6.764381}
@@ -42662,7 +42712,7 @@ GameObject:
   - component: {fileID: 33228415811160280}
   - component: {fileID: 23700166645287178}
   - component: {fileID: 114837478243661826}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43139,7 +43189,7 @@ GameObject:
   - component: {fileID: 33050117595635658}
   - component: {fileID: 23346850886322578}
   - component: {fileID: 114702976419267868}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44713,7 +44763,7 @@ GameObject:
   - component: {fileID: 33070111906510120}
   - component: {fileID: 23247626690251836}
   - component: {fileID: 114593896795699934}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46191,7 +46241,7 @@ GameObject:
   - component: {fileID: 33901868134583480}
   - component: {fileID: 23505390618476060}
   - component: {fileID: 114267313673896022}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47885,7 +47935,7 @@ GameObject:
   - component: {fileID: 33602291099684488}
   - component: {fileID: 23090133268038748}
   - component: {fileID: 114629459346057148}
-  m_Layer: 9
+  m_Layer: 8
   m_Name: xray tooth 31
   m_TagString: Untagged
   m_Icon: {fileID: 0}

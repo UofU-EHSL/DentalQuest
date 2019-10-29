@@ -29,14 +29,14 @@ public class random_person : MonoBehaviour {
         {
             tooth.init_location = tooth.this_tooth.transform.localPosition;
         }
-        init_man_y = mandibular_translation.y;
+        //init_man_y = mandibular_translation.y;
         Generate();
     }
 	
 	// Update is called once per frame
 	public void Generate () {
         mandibular_translation = mandibal.transform.localPosition;
-        mandibular_translation.y = init_man_y + Random.Range(mandibular_translation_min, mandibular_translation_max);
+        //mandibular_translation.y = init_man_y + Random.Range(mandibular_translation_min, mandibular_translation_max);
         mandibal.transform.localPosition = mandibular_translation;
         foreach (tooth tooth in teeth)
         {
