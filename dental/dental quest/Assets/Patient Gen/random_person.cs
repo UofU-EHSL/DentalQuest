@@ -23,6 +23,7 @@ public class random_person : MonoBehaviour {
     public float mandibular_translation_min;
     private float init_man_y;
     public tooth[] teeth;
+    public bool testing_impress;
 	// Use this for initialization
 	void Start () {
         foreach (tooth tooth in teeth)
@@ -32,9 +33,17 @@ public class random_person : MonoBehaviour {
         //init_man_y = mandibular_translation.y;
         Generate();
     }
-	
-	// Update is called once per frame
-	public void Generate () {
+
+    private void Update()
+    {
+        if (testing_impress == true)
+        {
+            impress();
+            testing_impress = false;
+        }
+    }
+    // Update is called once per frame
+    public void Generate () {
         mandibular_translation = mandibal.transform.localPosition;
         //mandibular_translation.y = init_man_y + Random.Range(mandibular_translation_min, mandibular_translation_max);
         mandibal.transform.localPosition = mandibular_translation;
@@ -42,6 +51,34 @@ public class random_person : MonoBehaviour {
         {
             tooth.location = new Vector3(Random.Range(-tooth.location_limit.x / 2, tooth.location_limit.x / 2), Random.Range(-tooth.location_limit.y / 2, tooth.location_limit.y / 2), Random.Range(-tooth.location_limit.z / 2, tooth.location_limit.z / 2));
             tooth.this_tooth.transform.localPosition = tooth.location+tooth.init_location;
+        }
+    }
+
+    public void impress()
+    {
+        foreach (tooth tooth in teeth)
+        {
+            if (tooth.this_tooth.GetComponent<single_tooth>().missing_tooth)
+            {
+                if (tooth.this_tooth.GetComponent<single_tooth>().has_abutment)
+                {
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = true;
+                }
+                else
+                {
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = true;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = false;
+                }
+            }
+            else
+            {
+                tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = true;
+                tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
+                tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = false;
+            }
         }
     }
 }
