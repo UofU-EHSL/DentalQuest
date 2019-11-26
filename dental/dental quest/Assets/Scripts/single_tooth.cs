@@ -104,6 +104,7 @@ public class single_tooth : MonoBehaviour {
         has_large_hole = false;
         has_implant = false;
         has_abutment = false;
+        xray.SetActive(true);
     }
     
     public void Update()
@@ -112,6 +113,7 @@ public class single_tooth : MonoBehaviour {
         {
             this_tooth.GetComponent<MeshRenderer>().enabled = false;
             Boxcollider.enabled = true;
+            xray.SetActive(false);
         }
         else
         {
@@ -277,7 +279,7 @@ public class single_tooth : MonoBehaviour {
         }
         //impressions
         if (other.tag == "impression") {
-            //MRI.GetComponent<random_person>().impress();
+            MRI.GetComponent<random_person>().impress();
         }
     }
 }
