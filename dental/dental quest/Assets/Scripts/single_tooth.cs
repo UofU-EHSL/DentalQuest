@@ -56,6 +56,12 @@ public class single_tooth : MonoBehaviour {
     public BoxCollider Boxcollider;
 
     [Header("Implants")]
+    public GameObject main_implant;
+    public GameObject barbie_cap;
+    public GameObject washer;
+    public GameObject short_abutment;
+    public GameObject mid_abutment;
+    public GameObject long_abutment;
     public GameObject implant_gameobject;
     public Vector3 implant_location;
     public Vector3 implant_rotation;
@@ -65,6 +71,8 @@ public class single_tooth : MonoBehaviour {
     public Vector3 abutment_location;
     public Quaternion abutment_rotation;
 
+    [Header("Adjacent teeth")]
+    public GameObject[] adjacentTeeth;
     public void Awake()
     {
         un_impressed = GameObject.Find("bottom goo/un_impressed");
@@ -212,13 +220,18 @@ public class single_tooth : MonoBehaviour {
         {
             smallest_xy = tooth_info.x;
         }
+
         //cutting
         if (has_cut == false && other.name == "blade" && missing_tooth == true)
         {
-            has_cut = true;
-            gum.GetComponent<MeshRenderer>().enabled = false;
-            cut_gum.GetComponent<MeshRenderer>().enabled = true; ;
+            if (adjacentTeeth[0].GetComponent<single_tooth>().missing_tooth == false || adjacentTeeth[1].GetComponent<single_tooth>().missing_tooth == false)
+            {
+                has_cut = true;
+                gum.GetComponent<MeshRenderer>().enabled = false;
+                cut_gum.GetComponent<MeshRenderer>().enabled = true; ;
+            }
         }
+
 
         //perio
         if (other.name == "Perio Probe" && missing_tooth == true)
@@ -241,12 +254,13 @@ public class single_tooth : MonoBehaviour {
     public void OnTriggerExit(Collider other)
     {
         //implant reset
+        /*
         if (other.GetComponent<implant>())
         {
             other.GetComponent<implant>().Reset_init();
             has_implant = false;
         }
-
+        */
         
         if (other.gameObject.GetComponent<abutment_addon>())
         {

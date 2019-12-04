@@ -1,0 +1,9 @@
+newmtl material0
+newmtl material1
+map_Kd mckenna1.png
+newmtl material2
+map_Kd mckenna2.png
+newmtl material3
+map_Kd mckenna3.png
+newmtl material4
+map_Kd mckenna4.png
