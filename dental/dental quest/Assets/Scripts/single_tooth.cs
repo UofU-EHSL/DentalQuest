@@ -59,9 +59,11 @@ public class single_tooth : MonoBehaviour {
     public GameObject main_implant;
     public GameObject barbie_cap;
     public GameObject washer;
-    public GameObject short_abutment;
-    public GameObject mid_abutment;
-    public GameObject long_abutment;
+    public GameObject short_locator_abutment;
+    public GameObject mid_locator_abutment;
+    public GameObject long_locator_abutment;
+    public GameObject single_unit_impression_couping;
+    public GameObject multi_unit_impression_couping;
     public GameObject implant_gameobject;
     public Vector3 implant_location;
     public Vector3 implant_rotation;
