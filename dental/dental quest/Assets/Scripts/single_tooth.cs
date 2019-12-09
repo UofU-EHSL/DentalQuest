@@ -131,7 +131,7 @@ public class single_tooth : MonoBehaviour {
         single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
         multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
         main_implant.GetComponent<MeshRenderer>().enabled = false;
-        Toppers_object.GetComponent<MeshRenderer>().enabled = false;
+        Toppers_object.SetActive(false);
     }
     public void reset()
     {
@@ -336,7 +336,7 @@ public class single_tooth : MonoBehaviour {
         {
             other.GetComponent<abutment>().Reset_init();
             has_abutment = false;
-            Toppers_object.GetComponent<CapsuleCollider>().enabled = true;
+            Toppers_object.SetActive(true);
         }
         if (has_cut == true && other.GetComponent<bur>().size < 2)
         {
