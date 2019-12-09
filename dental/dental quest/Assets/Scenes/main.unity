@@ -71550,6 +71550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: 
+  addonType: 0
 --- !u!114 &4206407709771347235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71593,6 +71594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: 
+  addonType: 0
 --- !u!114 &4206424653011154589
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72226,6 +72228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: 
+  addonType: 0
 --- !u!114 &4206564316133761201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73351,6 +73354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: locator
+  addonType: 0
 --- !u!114 &4206873092276861711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73593,6 +73597,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: 
+  addonType: 0
 --- !u!114 &4206931704170575079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74152,6 +74157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: locator
+  addonType: 0
 --- !u!114 &4207088242551701761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75463,6 +75469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: locator
+  addonType: 0
 --- !u!114 &4210857012596006761
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83157,7 +83164,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4319862517029212619}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -99026,6 +99033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   addon_name: 
+  addonType: 0
 --- !u!1 &4319770870199991759
 GameObject:
   m_ObjectHideFlags: 0
