@@ -59,19 +59,19 @@ public class single_tooth : MonoBehaviour {
     public GameObject main_implant;
     public GameObject barbie_cap;
     public GameObject washer;
+    public GameObject metalSnap;
     public GameObject short_locator_abutment;
     public GameObject mid_locator_abutment;
     public GameObject long_locator_abutment;
     public GameObject single_unit_impression_couping;
     public GameObject multi_unit_impression_couping;
-    public GameObject implant_gameobject;
-    public Vector3 implant_location;
-    public Vector3 implant_rotation;
+    public GameObject Toppers_object;
+    public Vector3 Toppers_offset_low;
+    public Vector3 Toppers_offset_mid;
+    public Vector3 Toppers_offset_high;
 
     [Header("Abutments")]
     public GameObject abutment_gameobject;
-    public Vector3 abutment_location;
-    public Quaternion abutment_rotation;
 
     [Header("Adjacent teeth")]
     public GameObject[] adjacentTeeth;
@@ -105,6 +105,33 @@ public class single_tooth : MonoBehaviour {
         impressed_abutment = GameObject.Find(impression_parent.name + "/Implant " + tooth_number.ToString());
         impressed_gums = GameObject.Find(impression_parent.name + "/Gums " + tooth_number.ToString());
         impressed_tooth = GameObject.Find(impression_parent.name + "/Tooth " + tooth_number.ToString());
+
+        //////////
+
+        barbie_cap = GameObject.Find(this.gameObject.name + "/Implant/Toppers/BarbieCup");
+        washer = GameObject.Find(this.gameObject.name + "/Implant/Toppers/Washer");
+        metalSnap = GameObject.Find(this.gameObject.name + "/Implant/Toppers/MetalSnap");
+
+        short_locator_abutment = GameObject.Find(this.gameObject.name + "/Implant/LocatorAbutmentSmall");
+        mid_locator_abutment = GameObject.Find(this.gameObject.name + "/Implant/LocatorAbutmentMedium");
+        long_locator_abutment = GameObject.Find(this.gameObject.name + "/Implant/LocatorAbutmentLarge");
+        single_unit_impression_couping = GameObject.Find(this.gameObject.name + "/Implant/SingleImpressionCoping");
+        multi_unit_impression_couping = GameObject.Find(this.gameObject.name + "/Implant/MultiImpressionCoping");
+        main_implant = GameObject.Find(this.gameObject.name + "/Implant/Body");
+        Toppers_object = GameObject.Find(this.gameObject.name + "/Implant/Toppers");
+
+
+        barbie_cap.GetComponent<MeshRenderer>().enabled = false;
+        washer.GetComponent<MeshRenderer>().enabled = false;
+        metalSnap.GetComponent<MeshRenderer>().enabled = false;
+
+        short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        mid_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        long_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+        multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+        main_implant.GetComponent<MeshRenderer>().enabled = false;
+        Toppers_object.GetComponent<MeshRenderer>().enabled = false;
     }
     public void reset()
     {
@@ -130,7 +157,7 @@ public class single_tooth : MonoBehaviour {
             this_tooth.GetComponent<MeshRenderer>().enabled = true;
             Boxcollider.enabled = false;
         }
-        //implant_gameobject.GetComponent<implant>().set_in(this.gameObject.transform, implant_location, new Quaternion(implant_rotation.x, implant_rotation.y, implant_rotation.z, 1), UpScale);
+        //Toppers_object.GetComponent<implant>().set_in(this.gameObject.transform, implant_location, new Quaternion(implant_rotation.x, implant_rotation.y, implant_rotation.z, 1), UpScale);
         if (has_cut)
         {
             gum.GetComponent<MeshRenderer>().enabled = false;
@@ -189,28 +216,64 @@ public class single_tooth : MonoBehaviour {
         //implant code
         if (other.gameObject.GetComponent<implant>() && has_large_hole == true && has_implant == false)
         {
-            implant_gameobject = other.gameObject;
+            main_implant.GetComponent<MeshRenderer>().enabled = true;
             has_implant = true;
-            implant_gameobject.GetComponent<implant>().set_in(this.gameObject.transform, implant_location, new Quaternion(implant_rotation.x, implant_rotation.y, implant_rotation.z, 1), UpScale);
         }
 
         //abutment
         if (other.gameObject.GetComponent<abutment>() && has_implant == true)
         {
-            implant_gameobject.GetComponent<CapsuleCollider>().enabled = false;
-            abutment_gameobject = other.gameObject;
+            if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SingleUnitImpressionCouping)
+            {
+                short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+                multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = true;
+            }
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MultiUnitImpressionCouping)
+            {
+                short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+                multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = true;
+                single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+            }
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SmallLocator)
+            {
+                short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
+                multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+            }
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MidLocator)
+            {
+                short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
+                multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+            }
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.LargeLocator)
+            {
+                short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
+                multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+            }
+
+            other.gameObject.GetComponent<abutment>().Reset_init();
             has_abutment = true;
-            abutment_gameobject.GetComponent<abutment>().set_in(implant_gameobject.transform, abutment_location, new Quaternion(0, 0, 0, 1), 1);
         }
 
         //abutment addon
         if (other.gameObject.GetComponent<abutment_addon>() && has_abutment == true)
         {
-            //implant_gameobject.GetComponent<BoxCollider>().enabled = false;
-            abutment_addon = other.gameObject;
+            if (other.gameObject.GetComponent<abutment_addon>().addonType == AbutmentAddonType.barbieCup)
+            {
+                barbie_cap.GetComponent<MeshRenderer>().enabled = true;
+            }
+            else if (other.gameObject.GetComponent<abutment_addon>().addonType == AbutmentAddonType.washer)
+            {
+                washer.GetComponent<MeshRenderer>().enabled = true;
+            }
+            else if (other.gameObject.GetComponent<abutment_addon>().addonType == AbutmentAddonType.metalSnap)
+            {
+                metalSnap.GetComponent<MeshRenderer>().enabled = true;
+            }
             has_addon = true;
-            location = new Vector3(0, abutment_gameobject.GetComponent<abutment>().addon_offset, 0);
-            abutment_addon.GetComponent<abutment_addon>().set_in(implant_gameobject.transform, abutment_location+location, new Quaternion(0, 0, 0, 1), 1);
         }
 
         //max implant size calculator
@@ -247,8 +310,6 @@ public class single_tooth : MonoBehaviour {
             has_abutment = true;
             abutment_gameobject = other.gameObject;
             other.gameObject.transform.SetParent(gameObject.transform);
-            other.gameObject.transform.localPosition = abutment_location;
-            other.gameObject.transform.localRotation = abutment_rotation;
         }
     }
 
@@ -275,7 +336,7 @@ public class single_tooth : MonoBehaviour {
         {
             other.GetComponent<abutment>().Reset_init();
             has_abutment = false;
-            implant_gameobject.GetComponent<CapsuleCollider>().enabled = true;
+            Toppers_object.GetComponent<CapsuleCollider>().enabled = true;
         }
         if (has_cut == true && other.GetComponent<bur>().size < 2)
         {

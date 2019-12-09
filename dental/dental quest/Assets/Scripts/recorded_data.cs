@@ -85,7 +85,7 @@ public class recorded_data : MonoBehaviour {
         }
         if (GetComponent<single_tooth>().has_implant)
         {
-            implant_size = GetComponent<single_tooth>().implant_gameobject.GetComponent<implant>().size.ToString();
+            implant_size = GetComponent<single_tooth>().Toppers_object.GetComponent<implant>().size.ToString();
             implant_time = current_timer;
         }
         if (GetComponent<single_tooth>().has_abutment)

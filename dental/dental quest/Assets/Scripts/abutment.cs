@@ -3,6 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
+public enum AbutmentType
+{
+    SingleUnitImpressionCouping,
+    MultiUnitImpressionCouping,
+    SmallLocator,
+    MidLocator,
+    LargeLocator,
+}
+
 public class abutment : MonoBehaviour {
     public string abutment_name;
     private GameObject init_parent;
@@ -10,6 +19,9 @@ public class abutment : MonoBehaviour {
     private Quaternion init_rotation;
     private Vector3 init_scale;
     public float addon_offset;
+    public AbutmentType abutmentType;
+
+
     public void Start()
     {
         init_loation = gameObject.transform.position;

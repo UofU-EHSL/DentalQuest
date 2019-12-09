@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum AbutmentAddonType
+{
+    barbieCup,
+    metalSnap,
+    washer
+}
+
 public class abutment_addon : MonoBehaviour {
 
     public string addon_name;
@@ -9,6 +16,7 @@ public class abutment_addon : MonoBehaviour {
     private Vector3 init_loation;
     private Quaternion init_rotation;
     private Vector3 init_scale;
+    public AbutmentAddonType addonType;
 
     public void Start()
     {
