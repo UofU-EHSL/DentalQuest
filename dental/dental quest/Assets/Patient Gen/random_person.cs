@@ -60,17 +60,29 @@ public class random_person : MonoBehaviour {
         {
             if (tooth.this_tooth.GetComponent<single_tooth>().missing_tooth)
             {
-                if (tooth.this_tooth.GetComponent<single_tooth>().has_multi_impression_abutment || tooth.this_tooth.GetComponent<single_tooth>().has_single_impression_abutment)
+                if (tooth.this_tooth.GetComponent<single_tooth>().has_single_impression_abutment)
                 {
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = true;
+
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.transform.GetChild(0).gameObject.SetActive(false);
+                }
+                else if (tooth.this_tooth.GetComponent<single_tooth>().has_multi_impression_abutment)
+                {
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = true;
+
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.transform.GetChild(0).gameObject.SetActive(true);
                 }
                 else
                 {
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = true;
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = false;
+
+                    tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.transform.GetChild(0).gameObject.SetActive(false);
                 }
             }
             else

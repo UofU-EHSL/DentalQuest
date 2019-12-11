@@ -32,14 +32,8 @@ public class impressions : MonoBehaviour {
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<abutment>() == true) {
-            OGscale = other.gameObject.transform.localScale;
-            abutmentOGParent = other.transform.parent.gameObject;
-            abutmentGameobject = other.gameObject;
-            other.gameObject.transform.SetParent(gameObject.transform);
-            other.gameObject.transform.localPosition = location;
-            other.gameObject.transform.localRotation = rotaion;
-            other.gameObject.transform.localScale = scale;
+        if (other.GetComponent<abutment>().abutmentType == AbutmentType.SingleUnitImpressionCouping) {
+            this.gameObject.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
     private void OnTriggerExit(Collider other)
