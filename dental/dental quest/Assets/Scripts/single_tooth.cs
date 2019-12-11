@@ -40,7 +40,9 @@ public class single_tooth : MonoBehaviour {
     public bool has_small_hole;
     public bool has_large_hole;
     public bool has_implant;
-    public bool has_abutment;
+    public bool has_multi_impression_abutment;
+    public bool has_single_impression_abutment;
+    public bool has_locator_abutment;
     public bool has_addon;
 
     [Header("Once Implanted")]
@@ -131,7 +133,7 @@ public class single_tooth : MonoBehaviour {
         single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
         multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
         main_implant.GetComponent<MeshRenderer>().enabled = false;
-        Toppers_object.SetActive(false);
+        
     }
     public void reset()
     {
@@ -140,8 +142,29 @@ public class single_tooth : MonoBehaviour {
         has_small_hole = false;
         has_large_hole = false;
         has_implant = false;
-        has_abutment = false;
-        xray.SetActive(true);
+        has_multi_impression_abutment = false;
+        has_single_impression_abutment = false;
+        has_locator_abutment = false;
+
+        barbie_cap.GetComponent<MeshRenderer>().enabled = false;
+        washer.GetComponent<MeshRenderer>().enabled = false;
+        metalSnap.GetComponent<MeshRenderer>().enabled = false;
+
+        short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        mid_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        long_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
+        single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+        multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+        main_implant.GetComponent<MeshRenderer>().enabled = false;
+
+        gum.GetComponent<MeshRenderer>().enabled = true;
+        cut_gum.GetComponent<MeshRenderer>().enabled = false;
+
+        jaw.GetComponent<MeshRenderer>().enabled = true;
+        large_hole.GetComponent<MeshRenderer>().enabled = false;
+        small_hole.GetComponent<MeshRenderer>().enabled = false;
+
+        Debug.Log("reset");
     }
     
     public void Update()
@@ -189,7 +212,7 @@ public class single_tooth : MonoBehaviour {
             {
                 impressed_abutment.GetComponent<MeshRenderer>().enabled = false;
                 impressed_gums.GetComponent<MeshRenderer>().enabled = true;
-                if (has_abutment == true)
+                if (has_multi_impression_abutment == true || has_single_impression_abutment == true)
                 {
                     impressed_abutment.GetComponent<MeshRenderer>().enabled = true;
                     impressed_gums.GetComponent<MeshRenderer>().enabled = false;
@@ -223,43 +246,47 @@ public class single_tooth : MonoBehaviour {
         //abutment
         if (other.gameObject.GetComponent<abutment>() && has_implant == true)
         {
-            if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SingleUnitImpressionCouping)
+            if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SingleUnitImpressionCouping && has_multi_impression_abutment == false && has_locator_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
                 multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
                 single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = true;
+                has_single_impression_abutment = true;
             }
-            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MultiUnitImpressionCouping)
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MultiUnitImpressionCouping && has_single_impression_abutment == false && has_locator_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
                 multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = true;
                 single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                has_multi_impression_abutment = true;
             }
-            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SmallLocator)
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SmallLocator && has_multi_impression_abutment == false && has_single_impression_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
                 multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
                 single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                has_locator_abutment = true;
             }
-            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MidLocator)
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.MidLocator && has_multi_impression_abutment == false && has_single_impression_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
                 multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
                 single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                has_locator_abutment = true;
             }
-            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.LargeLocator)
+            else if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.LargeLocator && has_multi_impression_abutment == false && has_single_impression_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = true;
                 multi_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
                 single_unit_impression_couping.GetComponent<MeshRenderer>().enabled = false;
+                has_locator_abutment = true;
             }
 
             other.gameObject.GetComponent<abutment>().Reset_init();
-            has_abutment = true;
         }
 
         //abutment addon
-        if (other.gameObject.GetComponent<abutment_addon>() && has_abutment == true)
+        if (other.gameObject.GetComponent<abutment_addon>() && has_locator_abutment == true)
         {
             if (other.gameObject.GetComponent<abutment_addon>().addonType == AbutmentAddonType.barbieCup)
             {
@@ -297,47 +324,23 @@ public class single_tooth : MonoBehaviour {
             }
         }
 
-
         //perio
         if (other.name == "Perio Probe" && missing_tooth == true)
         {
             //tooth_size_info.SetActive(true);
         }
 
-        //abutment
-        if (other.gameObject.tag == "abutment" && has_abutment == false)
-        {
-            has_abutment = true;
-            abutment_gameobject = other.gameObject;
-            other.gameObject.transform.SetParent(gameObject.transform);
-        }
     }
 
     //this is where a drill will work
     public void OnTriggerExit(Collider other)
-    {
-        //implant reset
-        /*
-        if (other.GetComponent<implant>())
-        {
-            other.GetComponent<implant>().Reset_init();
-            has_implant = false;
-        }
-        */
-        
+    {   
         if (other.gameObject.GetComponent<abutment_addon>())
         {
             
             has_addon = false;
         }
 
-        //abutment reset
-        if (other.GetComponent<abutment>() && has_implant == true)
-        {
-            other.GetComponent<abutment>().Reset_init();
-            has_abutment = false;
-            Toppers_object.SetActive(true);
-        }
         if (has_cut == true && other.GetComponent<bur>().size < 2)
         {
             jaw.GetComponent<MeshRenderer>().enabled = false;
@@ -354,6 +357,7 @@ public class single_tooth : MonoBehaviour {
         {
             //tooth_size_info.SetActive(false);
         }
+
         //impressions
         if (other.tag == "impression") {
             MRI.GetComponent<random_person>().impress();

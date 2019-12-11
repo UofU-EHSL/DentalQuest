@@ -60,7 +60,7 @@ public class random_person : MonoBehaviour {
         {
             if (tooth.this_tooth.GetComponent<single_tooth>().missing_tooth)
             {
-                if (tooth.this_tooth.GetComponent<single_tooth>().has_abutment)
+                if (tooth.this_tooth.GetComponent<single_tooth>().has_multi_impression_abutment || tooth.this_tooth.GetComponent<single_tooth>().has_single_impression_abutment)
                 {
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_tooth.GetComponent<MeshRenderer>().enabled = false;
                     tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
@@ -79,6 +79,14 @@ public class random_person : MonoBehaviour {
                 tooth.this_tooth.GetComponent<single_tooth>().impressed_gums.GetComponent<MeshRenderer>().enabled = false;
                 tooth.this_tooth.GetComponent<single_tooth>().impressed_abutment.GetComponent<MeshRenderer>().enabled = false;
             }
+        }
+    }
+
+    public void patinetReset()
+    {
+        foreach (tooth single in teeth)
+        {
+            single.this_tooth.GetComponent<single_tooth>().reset(); 
         }
     }
 }

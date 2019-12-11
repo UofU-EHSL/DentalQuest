@@ -14,10 +14,10 @@ public class denture_placement : MonoBehaviour {
     {
         if (other.gameObject == denture)
         {
-            if (implant_location[0].GetComponent<single_tooth>().has_abutment && implant_location[1].GetComponent<single_tooth>().has_abutment)
-            {
+            //if (implant_location[0].GetComponent<single_tooth>().has_abutment && implant_location[1].GetComponent<single_tooth>().has_abutment)
+            //{
                 
-            }
+            //}
         }
     }
 }

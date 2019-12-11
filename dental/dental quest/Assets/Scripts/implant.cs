@@ -5,29 +5,21 @@ using UnityEngine;
 public class implant : MonoBehaviour {
     public Vector3 size;
     private GameObject init_parent;
-    private Vector3 init_loation;
+    private Vector3 init_location;
     private Quaternion init_rotation;
     private Vector3 init_scale;
+    public GameObject grabObject;
     public void Start()
     {
-        init_loation = gameObject.transform.position;
-        init_rotation = gameObject.transform.rotation;
-        init_parent = gameObject.transform.parent.gameObject;
-        init_scale = gameObject.transform.localScale;
-    }
-    public void set_in(Transform parent, Vector3 location, Quaternion rotation, float scale)
-    {
-        gameObject.transform.parent = parent;
-        gameObject.transform.localPosition = location;
-        gameObject.transform.localRotation = rotation;
-        gameObject.transform.localScale = init_scale * scale;
-
+        init_location = grabObject.transform.position;
+        init_rotation = grabObject.transform.rotation;
+        init_parent = grabObject.transform.parent.gameObject;
+        init_scale = grabObject.transform.localScale;
     }
     public void Reset_init()
     {
-        gameObject.transform.SetParent(init_parent.transform);
-        gameObject.transform.position = init_loation;
-        gameObject.transform.rotation = init_rotation;
-        gameObject.transform.localScale = init_scale;
+        grabObject.transform.SetParent(init_parent.transform);
+        grabObject.transform.position = init_location;
+        grabObject.transform.rotation = init_rotation;
     }
 }
