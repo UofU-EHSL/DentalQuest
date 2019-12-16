@@ -6,7 +6,8 @@ public enum AbutmentAddonType
 {
     barbieCup,
     metalSnap,
-    washer
+    washer,
+    replica
 }
 
 public class abutment_addon : MonoBehaviour {
