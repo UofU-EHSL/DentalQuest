@@ -11,15 +11,16 @@ public class implant : MonoBehaviour {
     public GameObject grabObject;
     public void Start()
     {
-        init_location = grabObject.transform.position;
-        init_rotation = grabObject.transform.rotation;
-        init_parent = grabObject.transform.parent.gameObject;
-        init_scale = grabObject.transform.localScale;
+        init_location = init_parent.transform.position;
+        init_rotation = init_parent.transform.rotation;
     }
     public void Reset_init()
     {
-        grabObject.transform.SetParent(init_parent.transform);
+        //grabObject.transform.SetParent(init_parent.transform);
         grabObject.transform.position = init_location;
         grabObject.transform.rotation = init_rotation;
+
+        init_parent.GetComponent<Rigidbody>().velocity = Vector3.zero;
+        init_parent.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
     }
 }

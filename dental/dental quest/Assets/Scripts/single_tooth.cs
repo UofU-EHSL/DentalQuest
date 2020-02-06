@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 
 
@@ -77,6 +77,8 @@ public class single_tooth : MonoBehaviour {
 
     [Header("Adjacent teeth")]
     public GameObject[] adjacentTeeth;
+
+    public UnityEvent onTriggerEnter;
     public void Awake()
     {
         un_impressed = GameObject.Find("bottom goo/un_impressed");
@@ -230,6 +232,8 @@ public class single_tooth : MonoBehaviour {
     //this is where a blade will work
     public void OnTriggerEnter(Collider other)
     {
+        onTriggerEnter.Invoke();
+       
         //denture
         if (other.gameObject.GetComponent<denture>() && has_addon == true)
         {
@@ -239,6 +243,7 @@ public class single_tooth : MonoBehaviour {
         //implant code
         if (other.gameObject.GetComponent<implant>() && has_large_hole == true && has_implant == false)
         {
+            other.gameObject.GetComponent<implant>().Reset_init();
             main_implant.GetComponent<MeshRenderer>().enabled = true;
             has_implant = true;
         }
@@ -246,6 +251,8 @@ public class single_tooth : MonoBehaviour {
         //abutment
         if (other.gameObject.GetComponent<abutment>() && has_implant == true)
         {
+            other.gameObject.GetComponent<abutment>().Reset_init();
+
             if (other.gameObject.GetComponent<abutment>().abutmentType == AbutmentType.SingleUnitImpressionCouping && has_multi_impression_abutment == false && has_locator_abutment == false)
             {
                 short_locator_abutment.GetComponent<MeshRenderer>().enabled = false;
@@ -288,6 +295,8 @@ public class single_tooth : MonoBehaviour {
         //abutment addon
         if (other.gameObject.GetComponent<abutment_addon>() && has_locator_abutment == true)
         {
+            other.gameObject.GetComponent<abutment_addon>().Reset_init();
+
             if (other.gameObject.GetComponent<abutment_addon>().addonType == AbutmentAddonType.barbieCup)
             {
                 barbie_cap.GetComponent<MeshRenderer>().enabled = true;
