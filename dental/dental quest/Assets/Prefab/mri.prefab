@@ -19612,16 +19612,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210308802581048789}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19691,6 +19681,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.334292
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -19792,16 +19792,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210876771959890503}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19861,6 +19851,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 9.999987
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -19962,16 +19962,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4211313237883717781}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20026,6 +20016,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -194.45699
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -20127,16 +20127,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210426608117716649}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20206,6 +20196,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.334296
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -20307,16 +20307,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4211068143146410609}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20376,6 +20366,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 9.9999895
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -20477,16 +20477,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210652603434046407}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20556,6 +20546,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.334292
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -20657,16 +20657,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210852887357077053}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20736,6 +20726,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.334291
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -20837,16 +20837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4211398460756256935}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20901,6 +20891,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -196.49599
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -21002,16 +21002,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4211102443519506611}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21081,6 +21071,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.334292
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -21182,16 +21182,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210879842121812601}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21261,6 +21251,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 8.3343
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -21362,16 +21362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210860423416213975}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21431,6 +21421,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 9.999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -21537,16 +21537,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210776628257596851}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21601,6 +21591,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -202.75699
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
@@ -21662,11 +21662,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6542009349487739559, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 01f64576b9c769444a52e42c16fc8f3f, type: 2}
     - target: {fileID: 6542009349269328561, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Layer
@@ -21697,11 +21692,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 7fca7ec00cfb6004592513f8737c6569, type: 2}
-    - target: {fileID: 6542009350696944192, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7687dccdecd940149a421b079adaa6ca, type: 2}
     - target: {fileID: 6542009350134360371, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21722,6 +21712,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6542009349269328527, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 47a87e8348e1c1a4d8aa127e7fa34dc3, type: 2}
+    - target: {fileID: 6542009349487739559, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 01f64576b9c769444a52e42c16fc8f3f, type: 2}
+    - target: {fileID: 6542009350696944192, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7687dccdecd940149a421b079adaa6ca, type: 2}
     - target: {fileID: 6542009350012337011, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21732,11 +21737,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 032728a5ef5c15449b6d0ab3100783d9, type: 2}
-    - target: {fileID: 6542009349269328527, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 47a87e8348e1c1a4d8aa127e7fa34dc3, type: 2}
     - target: {fileID: 6542009350041939617, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -21757,16 +21757,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4211313940702594609}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21837,6 +21827,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 13.323999
       objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Layer
@@ -21877,11 +21877,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 6542009349896094232, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009349626606261, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Layer
@@ -21912,11 +21907,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[2]
       value: 
       objectReference: {fileID: 2100000, guid: 7fca7ec00cfb6004592513f8737c6569, type: 2}
-    - target: {fileID: 6542009350696944192, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350134360371, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_Enabled
@@ -21937,6 +21927,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 6542009350696944192, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009349896094232, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a13f61d18d242a54e80c15bc89e6fd84, type: 3}
 --- !u!4 &3767344703055608369 stripped
@@ -21952,16 +21952,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4210622659566622333}
     m_Modifications:
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Name
-      value: Implant
-      objectReference: {fileID: 0}
-    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
-        type: 3}
-      propertyPath: m_Layer
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6542009350962566983, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22016,6 +22006,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -206.724
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Name
+      value: Implant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6542009350962566984, guid: a13f61d18d242a54e80c15bc89e6fd84,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6542009349896094234, guid: a13f61d18d242a54e80c15bc89e6fd84,
         type: 3}
