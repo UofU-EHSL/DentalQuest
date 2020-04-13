@@ -1,0 +1,8 @@
+newmtl material0
+map_Kd open0.png
+newmtl material1
+map_Kd open1.png
+newmtl material2
+map_Kd open2.png
+newmtl material3
+map_Kd open3.png

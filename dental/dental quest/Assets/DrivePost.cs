@@ -10,12 +10,22 @@ public class DataPoint
     public GameObject text;
     public string form_id;
     public string data;
+    public bool Transform;
+    public bool Rotation;
 }
 
 public class DrivePost : MonoBehaviour
 {
+    public GameObject initParent;
     public DataPoint[] item;
     public bool test;
+    public bool moveToValidationPoints;
+    public Vector3 validationLocation;
+    public Quaternion validationRotation;
+    public void Start()
+    {
+        initParent = this.gameObject.transform.parent.gameObject;
+    }
     public void Submit()
     {
         foreach (DataPoint subData in item)
@@ -38,6 +48,10 @@ public class DrivePost : MonoBehaviour
             Submit();
             test = false;
         }
+        if(moveToValidationPoints){
+            this.gameObject.transform.localPosition = validationLocation;
+            this.gameObject.transform.localRotation = validationRotation;
+        }
     }
     [SerializeField]
     public string BASE_URL;
@@ -54,6 +68,13 @@ public class DrivePost : MonoBehaviour
             else if (thing.text.GetComponent<TextMeshProUGUI>())
             {
                 thing.data = thing.text.GetComponent<TextMeshProUGUI>().text;
+            }
+            else if (thing.Transform) {
+                thing.data = thing.text.transform.localPosition.ToString("F4");
+            }
+            else if (thing.Rotation)
+            {
+                thing.data = thing.text.transform.localRotation.ToString("F4");
             }
             else
             {
