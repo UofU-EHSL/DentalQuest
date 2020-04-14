@@ -12,6 +12,7 @@ public class DataPoint
     public string data;
     public bool Transform;
     public bool Rotation;
+    public bool getParent;
 }
 
 public class DrivePost : MonoBehaviour
@@ -75,6 +76,10 @@ public class DrivePost : MonoBehaviour
             else if (thing.Rotation)
             {
                 thing.data = thing.text.transform.localRotation.ToString("F4");
+            }
+            else if (thing.getParent)
+            {
+                thing.data = this.gameObject.transform.parent.gameObject.name;
             }
             else
             {
